@@ -24,7 +24,10 @@ export default function Renderer(props) {
         <Dialog
           header="Dialog"
           visible={open}
-          style={{ width: "50vw" }}
+          style={{
+            width: props.data.Content.props.width,
+            height: props.data.Content.props.height,
+          }}
           onHide={() => toggle(false)}
         >
           <CustomModal data={props} />

@@ -48,7 +48,7 @@ function App() {
           }}
         >
           <ModalContext.Provider value={{ open, toggle }}>
-            {/* Starting point for the json */}
+            {/* Starting point for the json . Change data2 to data to use with dummy data data1.js*/}
             <RenderLoop items={data2.Children} />
           </ModalContext.Provider>
         </div>
